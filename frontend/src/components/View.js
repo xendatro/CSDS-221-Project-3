@@ -12,6 +12,8 @@ function View({from, to, body, subject}) {
                 <p><b>Subject:</b> {subject}</p>
                 <p><b>Body:</b> {body}</p>
             </div>
+
+            
             </div>
         </div>
     )
