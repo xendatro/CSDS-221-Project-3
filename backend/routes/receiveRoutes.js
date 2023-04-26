@@ -5,6 +5,7 @@ const {getReceive, getReceives} = require('../controllers/receiveController')
 const router = express.Router()
 
 router.use(protect)
+    
 
 router.get('/', getReceives)
 
