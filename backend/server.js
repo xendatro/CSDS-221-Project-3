@@ -16,17 +16,18 @@ app.use('/api/user', userRoutes)
 app.use('/api/send', sendRoutes)
 app.use('/api/receive', receiveRoutes)
 
-__dirname = path.resolve()
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/build")))
+  app.use(express.static(path.join(__dirname, '../frontend/build')))
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'))
+    res.sendFile(path.resolve(__dirname, '../', 'frontend', 'build', 'index.html'))
   })
+} else {
+  app.get('/', (req, res) => res.send('Please set to production'))
 }
 
 // connect to db
-mongoose.connect("mongodb+srv://coatfife:jamalcrawfordhall65@ethancluster.8keyrop.mongodb.net/email?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('connected to database')
     // listen to port
