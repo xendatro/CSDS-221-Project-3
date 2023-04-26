@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://coatfife:jamalcrawfordhall65@ethancluster.8keyrop.mongodb.net/email?retryWrites=true&w=majority")
   .then(() => {
     console.log('connected to database')
     // listen to port
