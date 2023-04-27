@@ -35,7 +35,7 @@ function Home() {
                 <div className="row">
                     <div className="col-md-2">
                         <div className="btn-group-vertical form-control">
-                          <button className="btn btn-primary form-control" onClick={(e) => dispatch({type: "NEW"})}>Compose New CMail</button>
+                          <button className="btn btn-primary form-control" onClick={(e) => dispatch({type: "NEW"})}>Compose New eMessage</button>
                         </div>
                         <div className="btn-group-vertical form-control">
                            <button className="btn btn-info" onClick={(e) => dispatch({type: "INBOX"})}>Inbox</button>

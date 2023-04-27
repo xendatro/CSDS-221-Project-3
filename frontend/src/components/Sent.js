@@ -28,7 +28,7 @@ function Sent() {
         <div className="sent container-fluid">
            <div className="card">
                 <div className="card-header">
-                    Sent
+                    Sent eMessages
                 </div>
                 <div className="card-body">
                 {sent && sent.map((letter) => (

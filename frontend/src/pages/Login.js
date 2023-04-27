@@ -21,7 +21,7 @@ function Login() {
                     <div className="card-body">
                         <form onSubmit={handleSubmit}>
                             <br />
-                            <h3>Welcome back to CMail! Glad to see you again!</h3>
+                            <h3>Welcome back to eMessage! Glad to see you again!</h3>
                             <br />
                             <label htmlFor="username" className="form-label">Username:</label>
                             <input id="username" className="form-control" type="text" onChange={(e) => setUsername(e.target.value)} value={username} />

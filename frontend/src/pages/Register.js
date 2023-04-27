@@ -21,7 +21,7 @@ function Register() {
                     <div className="card-body">
                         <form onSubmit={handleSubmit}>
                             <br />
-                            <h3>Sign up and begin cmailing your friends today!</h3>
+                            <h3>Sign up and begin eMessaging your friends today!</h3>
                             <br />
                             <label htmlFor="username" className="form-label">Username:</label>
                             <input id="username" className="form-control" type="text" onChange={(e) => setUsername(e.target.value)} value={username} />

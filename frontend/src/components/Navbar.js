@@ -15,7 +15,7 @@ function Navbar() {
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" id="navbarContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="navbar-brand ">CMail</li>
+                            <li className="navbar-brand ">eMessage</li>
                         </ul>
                         <ul className="navbar-nav">
                             {user ? 
