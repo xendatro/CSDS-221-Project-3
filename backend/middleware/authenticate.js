@@ -8,6 +8,7 @@ const authenticate = async (req, res, next) => {
         res.status(400).json({
             error: "Authorization token is required."
         })
+        return
     }
 
     const token = authorization.split(" ")[1]
@@ -21,6 +22,7 @@ const authenticate = async (req, res, next) => {
     } catch (error) {
         console.log(error)
         res.status(401).json({error: "Request is not authorized."})
+        return
     }
 }
 

@@ -17,6 +17,7 @@ const createSend = async (req, res) => {
         res.status(400).json({
             error: "Please fill in all fields."
         })
+        return
     }
 
     const recipient = await User.findOne({username: to})
@@ -25,6 +26,7 @@ const createSend = async (req, res) => {
         res.status(400).json({
             error: "Invalid recipient."
         })
+        return
     }
 
     try {
@@ -45,6 +47,7 @@ const createSend = async (req, res) => {
         res.status(400).json({
             error: error.message
         })
+        return
     }
 }
 
