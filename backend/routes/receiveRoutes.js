@@ -12,3 +12,5 @@ router.get('/', getReceives)
 router.get('/:id', getReceive)
 
 module.exports = router
+
+
